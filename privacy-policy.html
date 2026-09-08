@@ -19,7 +19,6 @@
     <style>
         :root {
             --primary-color: #00B000;
-            --primary-dark: #008f00;
             --heading-color: #1a1a1a;
             --text-color: #4a5568;
             --bg-light: #f8fafc;
@@ -91,7 +90,7 @@
         .last-updated {
             font-size: 0.88rem;
             color: #718096;
-            margin-bottom: 26px;
+            margin-bottom: 24px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 14px;
         }
@@ -99,14 +98,14 @@
         h2 {
             color: var(--heading-color);
             font-weight: 600;
-            font-size: 1.2rem;
-            margin-top: 30px;
+            font-size: 1.18rem;
+            margin-top: 28px;
             margin-bottom: 12px;
             padding-left: 12px;
             border-left: 4px solid var(--primary-color);
         }
 
-        p, ul, ol {
+        p, ul {
             font-size: 0.95rem;
             margin-bottom: 14px;
         }
@@ -124,7 +123,7 @@
             border: 1px solid #bbf7d0;
             border-radius: 8px;
             padding: 18px 20px;
-            margin: 22px 0;
+            margin: 20px 0;
             font-size: 0.95rem;
             color: #166534;
         }
@@ -179,60 +178,55 @@
             </p>
 
             <div class="highlight-box">
-                <strong>Summary:</strong> The Prathibha Solutions application is a simple, informational WebView app designed solely to display our business website. <strong>We do not collect, store, transmit, or sell any personal data or sensitive user information.</strong>
+                <strong>Summary:</strong> The Prathibha Solutions mobile application is a simple WebView wrapper designed solely to display our business website. <strong>We do not collect, store, share, track, or process any user data or personal information.</strong>
             </div>
 
-            <h2>1. No Personal Data Collection</h2>
-            <p>We do not collect any personal identification information from users of our application. Specifically:</p>
+            <h2>1. No Collection of User Data</h2>
+            <p>Our application and website do not collect personal or device data from users. Specifically:</p>
             <ul>
-                <li>No user accounts, registrations, or login profiles are required or created.</li>
-                <li>No names, email addresses, phone numbers, or physical addresses are collected through the app.</li>
-                <li>No payment transactions, credit card information, or financial details are handled.</li>
-                <li>No biometric, health, or personal demographic data is collected.</li>
+                <li>We do not collect names, email addresses, phone numbers, or physical addresses.</li>
+                <li>We do not collect device IDs, advertising identifiers, IP logs, or crash logs.</li>
+                <li>We do not collect location data (neither precise GPS nor coarse network location).</li>
+                <li>We do not collect usage analytics or track user behavior.</li>
+                <li>There is no user registration, login, account creation, or user profile system.</li>
+                <li>There are no contact forms, comment fields, or message submission forms in the app.</li>
+                <li>There are no payment systems or financial transactions processed in the app.</li>
             </ul>
 
-            <h2>2. No Device or Hardware Access</h2>
-            <p>The application does not request, access, or track any sensitive device capabilities, sensors, or storage:</p>
+            <h2>2. No Data Retention or Deletion System</h2>
+            <p>
+                Because our application does not collect, receive, or store any personal or user data, we do not retain any user information. Consequently, a user data deletion mechanism is neither necessary nor provided.
+            </p>
+
+            <h2>3. Technical Permissions Used</h2>
+            <p>The application only requests the standard Android technical permissions required to display web pages:</p>
             <ul>
-                <li><strong>No Location Access:</strong> We do not track or request GPS, coarse, or fine location data.</li>
-                <li><strong>No Camera or Microphone Access:</strong> The app does not record audio or capture images.</li>
-                <li><strong>No Contacts or Calendar Access:</strong> The app has no access to your address book or personal events.</li>
-                <li><strong>No File or Storage Tracking:</strong> The app does not scan or access your device's photos, documents, or personal files.</li>
+                <li><code>android.permission.INTERNET</code>: Required solely to load and display our public web pages from <code>https://www.prathibhasolutions.com/</code>.</li>
+                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Required solely to check whether your device has an active internet connection so that a standard offline screen can be displayed if connectivity is unavailable.</li>
             </ul>
+            <p>The application does not request or access camera, microphone, contacts, location, storage, photos, or any other sensitive device capabilities.</p>
 
-            <h2>3. Permissions Used by the Application</h2>
-            <p>The application requests only the minimum technical permissions necessary to display web pages:</p>
-            <ul>
-                <li><code>android.permission.INTERNET</code>: Required solely to load and display our public website content from <code>https://www.prathibhasolutions.com/</code>.</li>
-                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Required solely to determine if your device is connected to the internet so that an offline message can be shown if connection is lost.</li>
-            </ul>
-
-            <h2>4. No Advertising or User Tracking</h2>
+            <h2>4. No Third-Party Tracking or Advertising</h2>
             <p>
-                Our mobile application contains no third-party advertisements, no ad tracking SDKs (such as Google AdMob or Facebook Ads), and no analytics trackers that monitor individual user behavior.
+                The application does not include any third-party advertising SDKs, ad networks, or analytics tracking libraries. We do not track users across other apps or websites.
             </p>
 
-            <h2>5. External Links</h2>
+            <h2>5. Children's Privacy</h2>
             <p>
-                The app displays our public business website, which may contain links to our official contact channels (such as <code>tel:</code> phone links, <code>mailto:</code> email links, or WhatsApp links). If you choose to tap these links, they will open your device's default dialer, email client, or messaging application. Any information you voluntarily choose to send through external channels is handled directly by those third-party communication providers.
+                Our application does not collect any personal information from any user, including children under the age of 13.
             </p>
 
-            <h2>6. Children's Privacy</h2>
+            <h2>6. Changes to This Privacy Policy</h2>
             <p>
-                Our application does not address or target anyone under the age of 13, and because we collect zero personal data, we do not knowingly collect or maintain any personal information from children.
+                If our application practices change in the future, any revisions will be published directly to this page with an updated "Effective Date."
             </p>
 
-            <h2>7. Changes to This Privacy Policy</h2>
+            <h2>7. Contact Information</h2>
             <p>
-                We may update this Privacy Policy from time to time if our application features change. Any updates will be posted directly to this URL with an updated "Effective Date."
-            </p>
-
-            <h2>8. Contact Us</h2>
-            <p>
-                If you have any questions or inquiries about this Privacy Policy or our practices, please contact us:
+                If you have any questions or require further clarification regarding this Privacy Policy, please contact us:
             </p>
             <div class="contact-card">
-                <p><strong>Company:</strong> Prathibha Solutions</p>
+                <p><strong>Entity Name:</strong> Prathibha Solutions</p>
                 <p><strong>Website:</strong> <a href="https://www.prathibhasolutions.com/" target="_blank" rel="noopener">https://www.prathibhasolutions.com/</a></p>
                 <p><strong>Email:</strong> <a href="mailto:info@prathibhasolutions.com">info@prathibhasolutions.com</a> / <a href="mailto:prathibhasolutions1@gmail.com">prathibhasolutions1@gmail.com</a></p>
                 <p><strong>Phone:</strong> +91 9542906390</p>
